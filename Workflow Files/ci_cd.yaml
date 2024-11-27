@@ -47,7 +47,7 @@ jobs:
   Test:
     runs-on: ubuntu-latest
 
-    # Ensure the build job only runs if tests pass
+    # Ensure the Test job only runs if Build pass
     needs: Build
 
     steps:
@@ -63,7 +63,7 @@ jobs:
   Release:
     runs-on: ubuntu-latest
 
-    # Ensure the build job only runs if tests pass
+    # Ensure the Release job only runs if Test pass
     needs: Test
 
     steps:
@@ -90,7 +90,7 @@ jobs:
   Deploy:
     runs-on: ubuntu-latest
 
-    # Ensure the deploy job only runs if the build is successful
+    # Ensure the Deploy job only runs if the Release is successful
     needs: Release
 
     steps:
