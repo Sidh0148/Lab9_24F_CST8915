@@ -1,6 +1,6 @@
 # Lab 9 - CST8915 Full-stack Cloud-native Development: Automating the Algonquin Pet Store with GitHub Actions
 
-Welcome to Lab 9! In this lab, you will automate the build, test, and deployment pipeline for the [Algonquin Pet Store (On Steroids)](https://github.com/ramymohamed10/algonquin-pet-store-on-steroids) microservices using GitHub Actions. This will enable continuous integration and continuous delivery (CI/CD) for your application, streamlining development and deployment processes.
+Welcome to Lab 9! In this lab, you will automate the build, test, and deployment pipeline for the [Algonquin Pet Store (On Steroids)](https://github.com/ramymohamed10/algonquin-pet-store-on-steroids) microservices using GitHub Actions. This will enable continuous integration and continuous deployment (CI/CD) for your application, streamlining development and deployment processes.
 
 > **Note:** This lab will incur an approximate cost of $3 to your Azure credit. Be sure to clean up your resources after completing the lab to avoid additional charges.
 

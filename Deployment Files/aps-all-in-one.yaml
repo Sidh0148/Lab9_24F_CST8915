@@ -379,7 +379,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: store-front
-          image: ramymohamed/store-front-l9:latest # Front-end store application
+          image: ramymohamed/store-front-l8:latest # Front-end store application
           imagePullPolicy: Always # Force the image to be pulled every time
           ports:
             - containerPort: 8080 # Front-end app port
