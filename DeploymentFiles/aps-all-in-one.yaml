@@ -401,22 +401,22 @@ spec:
               path: /health
               port: 8080
             failureThreshold: 3
-            initialDelaySeconds: 5
-            periodSeconds: 5
+            initialDelaySeconds: 25
+            periodSeconds: 25
           readinessProbe: # Ready status probe
             httpGet:
               path: /health
               port: 8080
-            failureThreshold: 3
-            initialDelaySeconds: 3
-            periodSeconds: 3
+            failureThreshold: 25
+            initialDelaySeconds: 25
+            periodSeconds: 25
           livenessProbe: # Ongoing health check
             httpGet:
               path: /health
               port: 8080
-            failureThreshold: 5
-            initialDelaySeconds: 3
-            periodSeconds: 3
+            failureThreshold: 25
+            initialDelaySeconds: 25
+            periodSeconds: 25
 ---
 # Service for Store Front
 apiVersion: v1
@@ -470,23 +470,23 @@ spec:
             httpGet:
               path: /health
               port: 8081
-            failureThreshold: 3
-            initialDelaySeconds: 5
-            periodSeconds: 5
+            failureThreshold: 25
+            initialDelaySeconds: 25
+            periodSeconds: 25
           readinessProbe: # Ready status probe
             httpGet:
               path: /health
               port: 8081
-            failureThreshold: 3
-            initialDelaySeconds: 3
-            periodSeconds: 5
+            failureThreshold: 25
+            initialDelaySeconds: 25
+            periodSeconds: 25
           livenessProbe: # Ongoing health check
             httpGet:
               path: /health
               port: 8081
-            failureThreshold: 5
-            initialDelaySeconds: 3
-            periodSeconds: 3
+            failureThreshold: 25
+            initialDelaySeconds: 25
+            periodSeconds: 25
 ---
 # Service for Store Admin
 apiVersion: v1
